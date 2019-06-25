@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 15:56:07
+    Author     : flore
+*/
+@font-face{ 
+    font-family: "RobotoLight";
+    src: url('polices/Roboto-Light.ttf') format("truetype");
+}
+
+
+.vertical-menu {
+  width: 200px;
+  margin:auto;
+  margin-top:50%;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  font-family: 'RobotoLight'; /* Police par défaut */
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #736d6d;
+  color: white;
+}

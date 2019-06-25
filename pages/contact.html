@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+    <head>
+        <title>Carnet de Voyage...</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gaire Lucie, Ricciardi Florent, Guillot Antoine">
+        <meta name="description" content="Découvrez nos plus beaux voyages sur notre site!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/contact.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="favicon.ico">
+        <script src="../js/mobile.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <img id="logo_menu" src="../images/terre.png" alt="Logo représentant un globe"/>
+                        <nav id="navigation"  onclick="">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li class="current"><a href="/ProjetWeb/index.html">Accueil</a></li>
+                    <li><a id="lien_europe" href="#europe">Europe</a>
+                        <ul>
+                            <li><a href="/ProjetWeb/pages/santorin.html">Santorin(Grèce)</a></li>
+                            <li><a href="/ProjetWeb/pages/barcelone.html">Barcelone(Espagne)</a></li>
+                            <li><a href="/ProjetWeb/pages/saintpetersbourg.html">Saint Pétersbourg(Russie)</a></li>
+                            <li><a href="/ProjetWeb/pages/venise.html">Venise(Italie)</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a id="lien_monde" href="#reste_du_monde">Reste du monde</a>
+                        <ul>
+                            <li><a href="/ProjetWeb/pages/newyork.html">New-York(Etats-Unis)</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/ProjetWeb/pages/monde.html">Carte du monde</a></li>
+                    <li><a href="/ProjetWeb/pages/simulateur.html">Simulateur</a></li>
+                    <li><a href="/ProjetWeb/pages/contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="titre_form">- FORMULAIRE DE CONTACT -</h1>
+        <section id="contact">
+            <h2 class="titrecache">titre</h2>
+            <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
+                <fieldset id="coordo">
+                    <legend>Laissez nous un message : </legend>
+                    <div>
+                        <label for="i_prenom">Votre prénom :</label>
+                        <input type="text" name="i_prenom" id="i_prenom" size="40" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required>
+                        <div class="input-validation"></div>
+                    </div>
+                    <div>
+                        <label for="i_email">Votre e-mail :</label> 
+                        <input type="email" name="i_email" id="i_email" size="40" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <div class="input-validation"></div>           
+                    </div>                           
+                    <div>
+                        <label for="area_commentaires"> Commentaires :</label>
+                        <br><textarea name="area_commentaires" id="area_commentaires" cols="35" rows="10"></textarea>
+                    </div>
+                    <div id="controles">
+                        <input type="button" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> 
+                        <input type="reset" name="rst_annuler" value="Effacer les réponses">
+                    </div>
+                </fieldset>   
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy;2019  - Créé par Gaire Lucie, Ricciardi Florent et Guillot Antoine<p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 15:16:57
+    Author     : flore
+*/
+
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    float:left;
+    position: relative;
+}
+
+.submenu{
+    display:none;
+}
+
+nav input[type=checkbox]{
+    display:none;
+}
+
+.menu-mobile{
+    display:none;
+}
+nav{
+    width:100%;
+    background-color: #424558;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration:none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index:10000;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size:13px;
+    color: #222538;
+    width: 270px;
+}
+
+.menu-accueil:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+.menu-carte:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+
+.menu-europe:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+
+.menu-reste:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+
+.menu-simulateur:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77,38, 0.15);
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+.menu-europe .submenu{
+    background-color: RGBa(228, 77,38);
+}
+
+.menu-reste .submenu{
+    background-color: RGBa(228, 77,38);
+}
+
+.submenu li:hover a{
+    color: #EEE;
+    font-weight:bold;
+}
+
+.menu-europe .submenu li:hover{
+    background-color: RGBa(210, 77,60);
+}
+
+.menu-reste .submenu li:hover{
+    background-color: RGBa(000, 77,38);
+}
+
+@media screen and (max-width:768px) {
+
+    .menu-mobile{
+        display: block;
+        color: #fff;
+        background-color: rgba(29,197,151,097);
+        text-align: center;
+        padding: 12px 0;
+
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li, nav ul li:hover a{
+        padding:10px 0px 10px 0px;
+    }
+    
+    nav li:hover .submenu{
+        display:block;
+        position: static;
+    }
+
+}

@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 juin 2019, 16:46:42
+    Author     : lucie.gaire
+*/
+
+@font-face{ 
+    font-family: "ReenieBeanie";
+    src: url('polices/ReenieBeanie.ttf') format("truetype");
+}
+
+#div_ville {
+    display : none;
+}
+
+#div_hotel {
+    display : none;
+}
+
+#prix h4,#prix #txt_prix{
+    display : inline;
+}
+
+#note h4,#note #txt_note{
+    display : inline;
+}
+
+#prixtotal h4,#prixtotal #txt_prixtotal{
+    display : inline;
+}
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    bottom: 0px; /* Bas */
+    height: 35px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:#283b48; /* Couleur de fond */
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+    font-family: 'RobotoLight'; /* Police par défaut */
+
+}
+
+
+footer p {
+    font-size: large; /* Le texte est grossi en L */
+}
+
+#titre_simulateur{
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size: 40px;
+    font-weight: 100;
+    text-align:center;
+    text-transform: uppercase; 
+}
+
+body{
+        font-family: 'RobotoLight'; /* Police par défaut */
+
+}
+#simulateur{
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    justify-content:center;
+    margin-bottom:40px;
+
+
+}
+
+#partie_gauche{
+    width: 35%;
+}
+
+#partie_droite{
+    width:40%;
+}
+
+label{
+    display: block; /* La balise devient de type block. */
+	width: 200px;
+        float: left;
+}
+
+#form_voyage div{
+    margin-bottom: 10px;
+}
+select ,[type="date"], input[type="number"] , input[type="number"]{
+	width: 250px;
+}
+
+
+@media screen and (max-width:768px) {
+    #titre_simulateur{
+        font-size:38px;
+    }
+}
+
+
+
+
+

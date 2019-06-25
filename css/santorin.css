@@ -1,0 +1,239 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 juin 2019, 10:46:40
+    Author     : flore
+*/
+
+
+/* Définition de la police "Montserrat" */
+@font-face{ 
+    font-family: "ReenieBeanie";
+    src: url('polices/ReenieBeanie.ttf') format("truetype");
+}
+
+@font-face{ 
+    font-family: "RobotoLight";
+    src: url('polices/Roboto-Light.ttf') format("truetype");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+#image_hautdepage{
+    width:100%;
+    height: 400px;
+}
+
+.titres_accueil{
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size: 50px;
+    font-weight: 100;
+    text-align:center;
+    text-transform: uppercase; 
+
+}
+
+#images_voyages{
+    display: flex;
+    justify-content:center;
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size: 20px;
+    font-weight:  lighter;
+    margin-bottom:100px;
+
+}
+
+#images_voyages h3{
+    text-align: center;
+    font-family: 'ReenieBeanie'; /* Police par dÃƒÂ©faut */
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 0px;
+}
+
+#images_gauche img{
+    width:300px;
+    height:200px;
+}
+
+#images_centre img{
+    width:500px;
+    height:500px;
+}
+
+#images_droite img{
+    width:300px;
+    height:200px;
+}
+
+#images_gauche{
+    width:300px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#images_centre{
+    margin-right: 1%;
+    margin-left: 1%;
+    width:500px;
+    height:500px;
+}
+
+#images_droite{
+
+    width:300px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+
+}
+.sec_img_voy img {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.sec_img_voy img:hover {
+    opacity: .5;
+}
+
+#titre_article{
+    margin-top:100px;
+}
+
+#sec_texte{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+
+}
+
+.articles{
+    display:flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+#sec_texte h4{
+    font-family: 'ReenieBeanie'; /* Police par dÃƒÂ©faut */
+    font-size: 38px;
+    font-weight: 100;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.image_article{
+    margin-top:10px;
+    height: 200px;
+    width: 200px;
+}
+.texte_article{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.texte_article p{
+    margin-top:0px;
+    font-family: 'RobotoLight'; /* Police par défaut */
+    font-size: 21px;
+}
+
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    bottom: 0px; /* Bas */
+    height: 35px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:#283b48; /* Couleur de fond */
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+    font-family: 'RobotoLight'; /* Police par défaut */
+
+}
+
+
+footer p {
+    font-size: large; /* Le texte est grossi en L */
+}
+
+@media screen and (max-width:768px) {
+    #image_hautdepage{
+        margin-top: 25px;
+        width:100%;
+        height:100px;
+    }
+
+    #pied{
+        display:none;
+    }
+
+    #images_voyages{
+        display:none;
+    }
+
+    #titre_img_voyages{
+        display: none;
+    }
+
+    .titres_accueil{
+        font-family: 'ReenieBeanie'; /* Police par défaut */
+        font-size: 25px;
+        font-weight: 100;
+        text-align:center;
+        text-transform: uppercase; 
+
+    }
+
+
+    #images_voyages h3{
+        text-align: center;
+        font-family: 'ReenieBeanie'; /* Police par dÃƒÂ©faut */
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 0px;
+    }
+
+    #titre_article{
+        margin-top:5px;
+    }
+
+    #sec_texte{
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+    }
+
+    .articles{
+        display:flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #sec_texte h4{
+        font-family: 'ReenieBeanie'; /* Police par dÃƒÂ©faut */
+        font-size: 20px;
+        font-weight: 100;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+
+    .texte_article p{
+        font-family: 'RobotoLight'; /* Police par défaut */
+        font-size: 15px;
+    }
+
+
+}

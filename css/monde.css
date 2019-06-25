@@ -1,0 +1,180 @@
+
+/* Définition de la police ReenieBeenie */
+@font-face{ 
+    font-family: "ReenieBeanie";
+    src: url('polices/ReenieBeanie.ttf') format("truetype");
+}
+
+
+.map__image{
+    width:50%;
+    float :left;
+    border-style: solid;
+}
+
+.map__image path {
+    fill: #a4ced2;
+    stroke: #FFF;
+    stroke-width:1px;
+    transition: fill 0.3s;
+}
+
+.map__image path:hover {
+    fill: #3538d2;
+
+}
+
+.map__list{
+    float: right;
+    width: 50%;
+}
+
+.map__list a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.map_monde{
+    float :left;
+    margin-right: 15px;
+    padding-top: 10px;
+    background-color:#2d404e;
+    width: 800px; 
+    height: 550px; 
+
+
+}
+
+.map_monde .visite{
+    fill:#0091ff;
+}
+.map_monde path {
+    fill: #48b19b;
+    stroke: #FFF;
+    stroke-width:1px;
+    transition: fill 0.3s;
+}
+
+
+.map_monde path:hover {
+    fill: #c82e52;
+
+}
+
+.info_pays{
+    float:right;
+    width: 28%;
+    border:1px rgba(0,0,0,0.1) solid;
+    padding-top: 10px;
+}
+
+#ensemble_carte{
+    display:flex;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+#titre_carte{
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size:40px;
+    text-align: center;
+}
+
+#nom_pays{
+    margin-top:0px;
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size:30px;
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+
+.info_pays{
+    padding-left:15px;
+    padding-right: 15px;
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size:28px;
+}
+
+.infos{
+    display:flex;
+}
+
+.titre_infos{
+    display:none;
+    font-family: "RobotoLight";
+}
+
+#svg_map{
+    display: inline; 
+    width: inherit; 
+    min-width: inherit; 
+    max-width: inherit; 
+    height: inherit; 
+    min-height: inherit;
+    max-height: inherit;
+    margin-bottom:50px;
+
+}
+
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    bottom: 0px; /* Bas */
+    height: 35px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:#283b48; /* Couleur de fond */
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+    font-family: 'RobotoLight'; /* Police par défaut */
+
+}
+
+
+footer p {
+    font-size: large; /* Le texte est grossi en L */
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    #pied{
+        display:none;
+    }
+
+
+    #ensemble_carte{
+        display:flex;
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+    }
+
+    .info_pays{
+        margin-top:10px;
+        padding-left:15px;
+        padding-right: 15px;
+        font-family: 'ReenieBeanie'; /* Police par défaut */
+        font-size:20px;
+        width:91%;
+    }
+    .map_monde{
+        float :left;
+        background-color:#2d404e;
+        width: 100%; 
+        height: 280px; 
+    }
+
+
+
+
+
+}

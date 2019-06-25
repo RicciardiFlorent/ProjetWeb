@@ -1,0 +1,141 @@
+/* Définition de la police  */
+@font-face{ 
+    font-family: "ReenieBeanie";
+    src: url('polices/ReenieBeanie.ttf') format("truetype");
+}
+
+@font-face{ 
+    font-family: "RobotoLight";
+    src: url('polices/Roboto-Light.ttf') format("truetype");
+}
+
+
+#contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+#contact form fieldset {
+    padding: 10px;
+    justify-content: center;
+    position : absolute;
+}
+
+#coordo{
+    margin-bottom: 50px;
+}
+#coordo legend {
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#coordo label {
+    margin-right: 10px;
+    size : 150px;
+}
+
+#coordo div input{
+    flex: 1;
+}
+input#i_email{
+    margin-left: 8px;
+}
+
+textarea#area_commentaires {
+    flex : 1;
+    margin-right: 20px;
+    padding-left: 2px;
+}
+
+#i_email input,#i_prenom input{
+    flex : 1;
+}
+
+#coordo div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#coordo input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#coordo fieldset {
+    width: fit-content;
+    margin: auto;  
+}
+
+#controles input:first-child {
+    margin-right: 10px;
+}
+
+#controles input {
+    justify-content: space-between;
+}
+
+input:valid, :not(input[type="submit"]) {
+    color: green;
+}
+input:invalid {
+    color: red;
+}
+
+input[type="text"]:valid ~ .input-validation::before,
+input[type="email"]:valid ~ .input-validation::before {
+    content: "✔";
+    margin-left: 5px;
+    color: green;
+}
+
+#contact{
+    margin-top:40px;
+    margin-bottom: 100px;
+    font-family: RobotoLight;
+}
+
+#titre_form{
+    margin-top:30px;
+
+    font-family: 'ReenieBeanie'; /* Police par défaut */
+    font-size:40px;
+    text-align: center;
+}
+
+footer {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    bottom: 0px; /* Bas */
+    height: 35px; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:#283b48; /* Couleur de fond */
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+    font-family: 'RobotoLight'; /* Police par défaut */
+
+}
+
+
+footer p {
+    font-size: large; /* Le texte est grossi en L */
+}
+@media screen and (max-width:576px) {
+    #contact{
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+
+    footer{
+        display:none;
+    }
+}
+
+
